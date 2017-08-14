@@ -270,4 +270,8 @@ menu {
 }img {
   max-width: 100%;
   height: auto;
+}#form-login {
+margin: auto;
+display: block;
+width: 14%;
 }
