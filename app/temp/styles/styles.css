@@ -271,7 +271,7 @@ menu {
 }img {
   max-width: 100%;
   height: auto;
-}/* Hides Static Footer on Desktop */.nav-mobile {
+}/* Hides Static Footer on Desktop */.nav-mobile-hide {
   display:none;
 }.form-login {
 margin: auto;
