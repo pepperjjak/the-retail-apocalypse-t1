@@ -13,6 +13,6 @@ img {
   height: auto;
 }
 /* Hides Static Footer on Desktop */
-.nav-mobile {
+.nav-mobile-hide {
   display:none;
 }
