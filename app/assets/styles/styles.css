@@ -1,8 +1,9 @@
 @import 'normalize.css';
 @import 'base/_mixins';
 @import 'base/_global';
-@import 'modules/_large-hero';
 @import 'modules/_form.css';
-@import 'modules/_responsive.css';
 @import 'modules/_navbar.css';
+@import 'modules/_registration.css';
+@import 'modules/_responsive.css';
 @import 'modules/_storedescription';
+@import 'modules/_searchbar.css';
