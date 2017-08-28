@@ -7,48 +7,69 @@
   <meta name="keywords" content="stores, store closing, bankruptcy">
   <meta name="description" content="A site showcasing all the retail stores closed in the United States">
   <!-- Added materialize  -->
-  <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script> -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/js/materialize.min.js" charset="utf-8"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/css/materialize.min.css"/>
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="temp/styles/styles.css"/>
 </head>
-
 <body>
-  <!-- Navigation Start  -->
-  <nav>
-    <div class="nav-wrapper">
-    <a class="brand-logo" href="#"> Retail Text.</a>
-    <a href="#" data-activates="mobile-demo" class="button-collapse"> <i class="material-icons">menu </i></a>
-      <ul class="right hide-on-med-and-down">
-        <li><a href="#">Contact</a></li>
-        <li><a href="login.html">Login</a>L</li>
-        <li><a href="registration.html">Register</a></li>
-      </ul>
-      <ul class="side-nav" id="mobile-demo">
-        <li><a href="#">Contact</a></li>
-        <li><a href="login.html">Login</a>L</li>
-        <li><a href="registration.html">Register</a></li>
-      </ul>
-    </div>
-  </nav>
-  <!-- Navigation End  -->
-
-  <!-- Form Start -->
-  <div class="container form-container">
-    <form>
-    <input type="text" name="Name" value="Name" id="form">
-    <br>
-    <input type="text" name="Email" value="Email" id="form">
-    <br>
-    <input type="text" name="Password" value="Password" id="form">
-    <br>
-    <input type="text" name="Password Again" value="Password Again" id="form">
-    </form>
+<!-- Navigation Start  -->
+<nav>
+  <div class="nav-wrapper">
+  <a class="brand-logo" href="#"> Retail Text.</a>
+  <a href="#" data-activates="mobile-demo" class="button-collapse"> <i class="material-icons">menu </i></a>
+    <ul class="right hide-on-med-and-down">
+      <li><a href="#">Contact</a></li>
+      <li><a href="login.html">Login</a></li>
+      <li><a href="registration.html">Register</a></li>
+    </ul>
+    <ul class="side-nav" id="mobile-demo">
+      <li><a href="#">Contact</a></li>
+      <li><a href="login.html">Login</a></li>
+      <li><a href="registration.html">Register</a></li>
+    </ul>
   </div>
-<!-- Form End  -->
-<!-- Mobile Nav Start  -->
+</nav>
+<!-- Navigation End  -->
+<!-- Contents Start -->
+<div class="container">
+  <div class="form-wrap">
+
+      <div class="row">
+        <form class="col s12">
+          <div class="row">
+            <div class="input-field col s6">
+              <input id="first_name" type="text" class="validate">
+              <label for="first_name">First Name</label>
+            </div>
+            <div class="input-field col s6">
+              <input id="last_name" type="text" class="validate">
+              <label for="last_name">Last Name</label>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s12">
+            <input id="password" type="password" class="validate">
+            <label for="password">Password</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s12">
+            <input id="email" type="email" class="validate">
+            <label for="email">Email</label>
+          </div>
+        </div>
+      </form>
+    </div>
+    
+  </div>
+</div>
+
+<!-- Content End -->
+<!-- Footer Start  -->
 <footer class="footer nav-mobile-hide">
   <div class="container">
     <img class="icon" src="http://via.placeholder.com/40x40">
@@ -58,6 +79,7 @@
     <img class="icon" src="http://via.placeholder.com/40x40">
   </div>
 </footer>
-<!-- Mobile Nav End  -->
+<!-- Footer End  -->
+<script src="../assets/js/main.js"></script>
 </body>
 </html>
