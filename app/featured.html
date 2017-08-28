@@ -7,7 +7,7 @@
   <meta name="keywords" content="stores, store closing, bankruptcy">
   <meta name="description" content="A site showcasing all the retail stores closed in the United States">
   <!-- Added materialize  -->
-  <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/js/materialize.min.js" charset="utf-8"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/css/materialize.min.css"/>
@@ -18,25 +18,67 @@
 <!-- Navigation Start  -->
 <nav>
   <div class="nav-wrapper">
-  <a class="brand-logo" href="#"> Retail Text.</a>
-  <a href="#" data-activates="mobile-demo" class="button-collapse"> <i class="material-icons">menu </i></a>
+  <a class="brand-logo" href="#"> <img src="../assets/images/logo/retail-apoc.svg" alt="Retail Apoc Logo"></a>
+  <a href="#" data-activates="mobile-demo" class="button-collapse"> <i class="material-icons">menu</i></a>
     <ul class="right hide-on-med-and-down">
-      <li><a href="#">Contact</a></li>
-      <li><a href="login.html">Login</a>L</li>
-      <li><a href="registration.html">Register</a></li>
+      <li><a href="#">Register</a></li>
+      <li><a href="#">Store Listings</a></li>
+      <li><a href="login.html">Search Tags</a></li>
+      <li><a href="registration.html">Top Stores</a></li>
+      <li><a href="registration.html">Add Store</a></li>
+      <li><a href="registration.html">Map View</a></li>
     </ul>
     <ul class="side-nav" id="mobile-demo">
-      <li><a href="#">Contact</a></li>
-      <li><a href="login.html">Login</a>L</li>
-      <li><a href="registration.html">Register</a></li>
+      <li><a href="#">Register</a></li>
+      <li><a href="#">Store Listings</a></li>
+      <li><a href="login.html">Search Tags</a></li>
+      <li><a href="registration.html">Top Stores</a></li>
+      <li><a href="registration.html">Add Store</a></li>
+      <li><a href="registration.html">Map View</a></li>
     </ul>
   </div>
 </nav>
 <!-- Navigation End  -->
-<!-- Contents Start -->
+<!-- Featured Images Start -->
+<h1> Featured Stores </h1>
+<div>
+<img src="http://via.placeholder.com/320x200" alt="Store 01" class="feature-store">
+<img src="http://via.placeholder.com/320x200" alt="Store 02" class="feature-store">
+<img src="http://via.placeholder.com/320x200" alt="Store 03" class="feature-store">
+</div>
 
+<!-- Featured Images End -->
+<!-- Table Start -->
+<h1> Search Results </h1>
+<table class="striped">
+        <thead>
+          <tr>
+              <th>Name</th>
+              <th>Item Name</th>
+              <th>Item Price</th>
+          </tr>
+        </thead>
 
-<!-- Content End -->
+        <tbody>
+          <tr>
+            <td>Alvin</td>
+            <td>Eclair</td>
+            <td>$0.87</td>
+          </tr>
+          <tr>
+            <td>Alan</td>
+            <td>Jellybean</td>
+            <td>$3.76</td>
+          </tr>
+          <tr>
+            <td>Jonathan</td>
+            <td>Lollipop</td>
+            <td>$7.00</td>
+          </tr>
+        </tbody>
+      </table>
+
+<!-- Table End -->
 <!-- Footer Start  -->
 <footer class="footer nav-mobile-hide">
   <div class="container">
