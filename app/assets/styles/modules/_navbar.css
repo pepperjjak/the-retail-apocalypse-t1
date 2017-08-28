@@ -14,3 +14,21 @@
   padding: 0 4% 0 4%;
   max-width: 20%;
 }
+/*Materialize Overides*/
+nav{
+  background-color: #D9C68D;
+  height:60px;
+}
+@media only screen and (min-width: 601px) {
+  nav{
+    height:60px;
+  }
+}
+
+nav .brand-logo {
+  padding: 0.1% 0 0 1%;
+}
+
+.brand-logo > img {
+  width:35%;
+}
