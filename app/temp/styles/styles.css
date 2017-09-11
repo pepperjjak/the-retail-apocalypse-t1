@@ -504,6 +504,45 @@ width: 14%;
   max-width: 20%;
 }
 
+/*Materialize Overides*/
+
+nav{
+  background-color: #D9C68D;
+  height:60px;
+}
+
+@media only screen and (min-width: 601px) {
+  nav{
+    height:60px;
+  }
+}
+
+nav .brand-logo {
+  padding: 0.1% 0 0 1%;
+
+}
+
+.brand-logo > img {
+  width:35%;
+}
+
+/* ----------- iPhone 6 & Lower ( for now ) ----------- */
+
+/* Portrait and Landscape */
+
+@media only screen
+  /*and (min-device-width: 414px)*/
+  and (max-device-width: 736px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and ( orientation: portrait) {
+  /*Hides Desktop Nav*/
+  nav .brand-logo {
+    top: 2%;
+    left: 60%;
+  }
+
+}
+
 .form-wrap {
 
 }
@@ -528,12 +567,14 @@ width: 14%;
 
 }
 
-img {
+/* Let's find a new class instead of directly targeting the img tag.*/
+
+/*img {
 display: block;
 margin: auto;
 width: 50%;
 padding: 5px;
-}
+}*/
 
 .search {
   width: 100%;
@@ -572,28 +613,6 @@ button:focus {
   border: none;
   background: none;
   text-align: center;
-}
-
-.icon{
-  padding: 0 4% 0 4%;
-  max-width: 20%;
-}/*Materialize Overides*/nav{
-  background-color: #D9C68D;
-  height:60px;
-}@media only screen and (min-width: 601px) {
-  nav{
-    height:60px;
-  }
-}nav .brand-logo {
-  padding: 0.1% 0 0 1%;
-}.brand-logo > img {
-  width:35%;
-}img {
-display: block;
-margin: auto;
-width: 50%;
-padding: 5px;
-=======
   color: #000;
   border-radius: 5px;
   cursor: pointer;
@@ -636,4 +655,95 @@ input[type=text]:not(.browser-default):focus:not([readonly]) {
   border-bottom: 1px solid #ddd;
 -webkit-box-shadow: 0 1px 0 0 #ddd;
 box-shadow: 0 1px 0 0 #ddd;
+}
+
+.featured-images {
+  text-align: center;
+}
+
+.featured-images > img {
+display: inline-block;
+max-width: 30%;
+}
+
+.store-list:nth-of-type(2) {
+padding: 2% 0 0 0;
+border-top: none;
+border-bottom: 1px solid #ddd;
+}
+
+.store-list {
+border-top: 1px solid #ddd;
+border-bottom: 1px solid #ddd;
+}
+
+.store-list-last {
+  border-top: 1px solid #ddd;
+}
+
+.store-img {
+  display: inline-block;
+  margin: 0 5% 0 0;
+}
+
+.store-img > img {
+  /* Width overrides framework. */
+  width:100%;
+  max-width:100%;
+}
+
+.store-details {
+  display: inline-block;
+
+}
+
+.store-details > p {
+  line-height: 70%;
+}
+
+.store-details > h3 {
+  font-size: 1.4rem;
+  line-height:  70%;
+}
+
+/* Button Styling.*/
+
+.btn-large {
+  background-color: #618D7A;
+}
+
+.btn-large:hover {
+  background-color: #618D7A;
+}
+
+.add-store {
+  margin: 2% 0 2% 0%;
+}
+
+/* ----------- iPhone 6 & Lower ( for now ) ----------- */
+
+/* Portrait and Landscape */
+
+@media only screen
+  /*and (min-device-width: 414px)*/
+  and (max-device-width: 736px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and ( orientation: portrait) {
+    .featured-images > img {
+      max-width: 100%;
+      padding: 2% 0 0 0;
+    }
+    .add-store {
+      margin: 3% 0 0 0;
+    }
+    .btn-large {
+      width: 100%;
+    }
+
+}
+
+/* Materialize Overides*/
+
+.page-footer {
+  background-color: #DCC685;
 }

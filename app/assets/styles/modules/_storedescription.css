@@ -1,6 +1,7 @@
-img {
+/* Let's find a new class instead of directly targeting the img tag.*/
+/*img {
 display: block;
 margin: auto;
 width: 50%;
 padding: 5px;
-}
+}*/
