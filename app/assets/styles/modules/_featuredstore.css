@@ -1,6 +1,73 @@
-.feature-store {
-  display:inline-block;
-  width:30%;
-  padding:5px;
+
+.featured-images {
+  text-align: center;
+}
+.featured-images > img {
+display: inline-block;
+max-width: 30%;
+}
+.store-list:nth-of-type(2) {
+padding: 2% 0 0 0;
+border-top: none;
+border-bottom: 1px solid #ddd;
+}
+.store-list {
+border-top: 1px solid #ddd;
+border-bottom: 1px solid #ddd;
+}
+.store-list-last {
+  border-top: 1px solid #ddd;
+}
+.store-img {
+  display: inline-block;
+  margin: 0 5% 0 0;
+}
+.store-img > img {
+  /* Width overrides framework. */
+  width:100%;
+  max-width:100%;
+}
+.store-details {
+  display: inline-block;
+
+}
+.store-details > p {
+  line-height: 70%;
+}
+.store-details > h3 {
+  font-size: 1.4rem;
+  line-height:  70%;
+}
+
+/* Button Styling.*/
+.btn-large {
+  background-color: #618D7A;
+}
+.btn-large:hover {
+  background-color: #618D7A;
+}
+.add-store {
+  margin: 2% 0 2% 0%;
+}
+
+
+/* ----------- iPhone 6 & Lower ( for now ) ----------- */
+
+/* Portrait and Landscape */
+  @media only screen
+  /*and (min-device-width: 414px)*/
+  and (max-device-width: 736px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and ( orientation: portrait) {
+    .featured-images > img {
+      max-width: 100%;
+      padding: 2% 0 0 0;
+    }
+    .add-store {
+      margin: 3% 0 0 0;
+    }
+    .btn-large {
+      width: 100%;
+    }
 
 }

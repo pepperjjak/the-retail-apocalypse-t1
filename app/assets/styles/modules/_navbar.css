@@ -27,8 +27,25 @@ nav{
 
 nav .brand-logo {
   padding: 0.1% 0 0 1%;
+
 }
 
 .brand-logo > img {
   width:35%;
+}
+
+/* ----------- iPhone 6 & Lower ( for now ) ----------- */
+
+/* Portrait and Landscape */
+  @media only screen
+  /*and (min-device-width: 414px)*/
+  and (max-device-width: 736px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and ( orientation: portrait) {
+  /*Hides Desktop Nav*/
+  nav .brand-logo {
+    top: 2%;
+    left: 60%;
+  }
+
 }
