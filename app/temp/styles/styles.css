@@ -761,3 +761,11 @@ border-bottom: 1px solid #ddd;
 .page-footer {
   background-color: #DCC685;
 }
+
+.login{
+  margin-top: 5%;
+}
+
+main {
+  background-image: url('../../assets/background.png');
+}
